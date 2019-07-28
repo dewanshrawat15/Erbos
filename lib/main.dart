@@ -4,6 +4,7 @@ import 'package:path_provider/path_provider.dart';
 import 'accounts.dart';
 import 'list.dart';
 import 'home.dart';
+import 'search.dart';
 
 void main() {
   runApp(new MaterialApp(debugShowCheckedModeBanner: false, home: new MyApp()));
@@ -43,7 +44,7 @@ class MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
       body: new TabBarView(
         children: <Widget>[
           HomePage(),
-          new Tab(icon: new Icon(Icons.search)),
+          SearchScreen(),
           SongsList(),
           AccountInfo(),
         ],
