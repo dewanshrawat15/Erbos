@@ -13,6 +13,12 @@ class AccountInfo extends StatelessWidget{
             Padding(
               padding: EdgeInsets.all(64.0),
             ),
+            Text(
+              'Profile', style: TextStyle(fontSize: 32.0, color: theme_color, fontFamily: 'Product Sans')
+            ),
+            Padding(
+              padding: EdgeInsets.all(32.0),
+            ),
             Hero(
               tag: 'hero',
               child: Padding(
@@ -56,10 +62,16 @@ class AccountInfo extends StatelessWidget{
             ),
             Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text(
-                "Logout",
-                style: TextStyle(fontSize: 20.0, color: theme_color, fontFamily: 'Product Sans',),
-              ),
+              child: Container(
+                padding: const EdgeInsets.only(left: 36.0, right: 36.0, top: 16.0, bottom: 16.0),
+                decoration: new BoxDecoration(
+                  color: theme_color,
+                ),
+                child: Text(
+                  "Logout",
+                  style: TextStyle(fontSize: 20.0, color: Colors.white, fontFamily: 'Product Sans', fontWeight: FontWeight.bold),
+                ),
+              )
             ),
           ],
         ),
